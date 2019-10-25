@@ -77,7 +77,8 @@ class ScrollCore {
                 // 是否平滑滚动
                 if enableSmooth {
                     // 禁止返回原始事件
-                    returnOriginalEvent = false
+                    // returnOriginalEvent = false
+                    returnOriginalEvent = true
                     // 如果输入值为非 Fixed 类型, 则使用 Step 作为门限值将数据归一化
                     if !scrollEvent.X.fixed {
                         ScrollEventUtils.normalizeX(scrollEvent, Options.shared.advanced.step)
